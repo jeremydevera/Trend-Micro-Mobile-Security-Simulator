@@ -1,4 +1,4 @@
-Requirements:
+<b>Requirements:</b>
 1. Visual Studio Code Community
 2. .NET Framework
 
