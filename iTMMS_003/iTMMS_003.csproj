@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C29DCD5-D1A8-48B7-8E7B-E68B5AC89A5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iTMMS_003</RootNamespace>
+    <AssemblyName>iTMMS_003</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>iTMMS_003.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="activate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="activate.Designer.cs">
+      <DependentUpon>activate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_approved_website.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_approved_website.Designer.cs">
+      <DependentUpon>add_approved_website.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buy_or_activate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy_or_activate.Designer.cs">
+      <DependentUpon>buy_or_activate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="camera_roll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camera_roll.Designer.cs">
+      <DependentUpon>camera_roll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="camera_roll_scanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camera_roll_scanning.Designer.cs">
+      <DependentUpon>camera_roll_scanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cellular_data_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cellular_data_settings.Designer.cs">
+      <DependentUpon>cellular_data_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cellular_usage_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cellular_usage_history.Designer.cs">
+      <DependentUpon>cellular_usage_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data_plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_plan.Designer.cs">
+      <DependentUpon>data_plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data_usage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_usage.Designer.cs">
+      <DependentUpon>data_usage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data_usage_cellular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_usage_cellular.Designer.cs">
+      <DependentUpon>data_usage_cellular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data_usage_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_usage_settings.Designer.cs">
+      <DependentUpon>data_usage_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data_usage_wifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_usage_wifi.Designer.cs">
+      <DependentUpon>data_usage_wifi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="device_access.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="device_access.Designer.cs">
+      <DependentUpon>device_access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_approved_websites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_approved_websites.Designer.cs">
+      <DependentUpon>edit_approved_websites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="experience_wifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="experience_wifi.Designer.cs">
+      <DependentUpon>experience_wifi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="features.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="features.Designer.cs">
+      <DependentUpon>features.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feature_content_blocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feature_content_blocker.Designer.cs">
+      <DependentUpon>feature_content_blocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feature_content_blocker2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feature_content_blocker2.Designer.cs">
+      <DependentUpon>feature_content_blocker2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feature_content_blocker3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feature_content_blocker3.Designer.cs">
+      <DependentUpon>feature_content_blocker3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feature_content_blocker4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feature_content_blocker4.Designer.cs">
+      <DependentUpon>feature_content_blocker4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feature_content_blocker5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feature_content_blocker5.Designer.cs">
+      <DependentUpon>feature_content_blocker5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feature_content_blocker6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feature_content_blocker6.Designer.cs">
+      <DependentUpon>feature_content_blocker6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feature_content_blocker7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feature_content_blocker7.Designer.cs">
+      <DependentUpon>feature_content_blocker7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fraud_buster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fraud_buster.Designer.cs">
+      <DependentUpon>fraud_buster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fraud_buster_getstarted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fraud_buster_getstarted.Designer.cs">
+      <DependentUpon>fraud_buster_getstarted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fraud_buster_imessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fraud_buster_imessage.Designer.cs">
+      <DependentUpon>fraud_buster_imessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="how_webguard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="how_webguard.Designer.cs">
+      <DependentUpon>how_webguard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="how_wifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="how_wifi.Designer.cs">
+      <DependentUpon>how_wifi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iPad.Designer.cs">
+      <DependentUpon>iPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ldp_map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ldp_map.Designer.cs">
+      <DependentUpon>ldp_map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ldp_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ldp_page.Designer.cs">
+      <DependentUpon>ldp_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lost_device_browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lost_device_browser.Designer.cs">
+      <DependentUpon>lost_device_browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lost_device_protection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lost_device_protection.Designer.cs">
+      <DependentUpon>lost_device_protection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="more_tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="more_tools.Designer.cs">
+      <DependentUpon>more_tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parental_controls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parental_controls.Designer.cs">
+      <DependentUpon>parental_controls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="password_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="password_manager.Designer.cs">
+      <DependentUpon>password_manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase.Designer.cs">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR.Designer.cs">
+      <DependentUpon>QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roaming_data_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roaming_data_settings.Designer.cs">
+      <DependentUpon>roaming_data_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="safe_surfing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="safe_surfing.Designer.cs">
+      <DependentUpon>safe_surfing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="safe_surfing_activities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="safe_surfing_activities.Designer.cs">
+      <DependentUpon>safe_surfing_activities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scanning.Designer.cs">
+      <DependentUpon>scanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scan_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scan_result.Designer.cs">
+      <DependentUpon>scan_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screenshot_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screenshot_settings.Designer.cs">
+      <DependentUpon>screenshot_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="security_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="security_report.Designer.cs">
+      <DependentUpon>security_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings_filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_filter.Designer.cs">
+      <DependentUpon>settings_filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings_renew_activate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings_renew_activate.Designer.cs">
+      <DependentUpon>settings_renew_activate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="share.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="share.Designer.cs">
+      <DependentUpon>share.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signin_facebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signin_facebook.Designer.cs">
+      <DependentUpon>signin_facebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signout.Designer.cs">
+      <DependentUpon>signout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signout_scanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signout_scanning.Designer.cs">
+      <DependentUpon>signout_scanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signout_scan_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signout_scan_result.Designer.cs">
+      <DependentUpon>signout_scan_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signout_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signout_settings.Designer.cs">
+      <DependentUpon>signout_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="social_network.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="social_network.Designer.cs">
+      <DependentUpon>social_network.cs</DependentUpon>
+    </Compile>
+    <Compile Include="social_network_facebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="social_network_facebook.Designer.cs">
+      <DependentUpon>social_network_facebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="social_network_scan_again.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="social_network_scan_again.Designer.cs">
+      <DependentUpon>social_network_scan_again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="social_network_twitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="social_network_twitter.Designer.cs">
+      <DependentUpon>social_network_twitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test_webguard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test_webguard.Designer.cs">
+      <DependentUpon>test_webguard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vpn_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vpn_settings.Designer.cs">
+      <DependentUpon>vpn_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="web_guard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="web_guard.Designer.cs">
+      <DependentUpon>web_guard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="web_guard_approved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="web_guard_approved.Designer.cs">
+      <DependentUpon>web_guard_approved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="web_guard_blocked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="web_guard_blocked.Designer.cs">
+      <DependentUpon>web_guard_blocked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="web_guard_browsing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="web_guard_browsing.Designer.cs">
+      <DependentUpon>web_guard_browsing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wifi_checker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wifi_checker.Designer.cs">
+      <DependentUpon>wifi_checker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wifi_network_connections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wifi_network_connections.Designer.cs">
+      <DependentUpon>wifi_network_connections.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="activate.resx">
+      <DependentUpon>activate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_approved_website.resx">
+      <DependentUpon>add_approved_website.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buy_or_activate.resx">
+      <DependentUpon>buy_or_activate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camera_roll.resx">
+      <DependentUpon>camera_roll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camera_roll_scanning.resx">
+      <DependentUpon>camera_roll_scanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cellular_data_settings.resx">
+      <DependentUpon>cellular_data_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cellular_usage_history.resx">
+      <DependentUpon>cellular_usage_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_plan.resx">
+      <DependentUpon>data_plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_usage.resx">
+      <DependentUpon>data_usage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_usage_cellular.resx">
+      <DependentUpon>data_usage_cellular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_usage_settings.resx">
+      <DependentUpon>data_usage_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_usage_wifi.resx">
+      <DependentUpon>data_usage_wifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="device_access.resx">
+      <DependentUpon>device_access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_approved_websites.resx">
+      <DependentUpon>edit_approved_websites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="experience_wifi.resx">
+      <DependentUpon>experience_wifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="features.resx">
+      <DependentUpon>features.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feature_content_blocker.resx">
+      <DependentUpon>feature_content_blocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feature_content_blocker2.resx">
+      <DependentUpon>feature_content_blocker2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feature_content_blocker3.resx">
+      <DependentUpon>feature_content_blocker3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feature_content_blocker4.resx">
+      <DependentUpon>feature_content_blocker4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feature_content_blocker5.resx">
+      <DependentUpon>feature_content_blocker5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feature_content_blocker6.resx">
+      <DependentUpon>feature_content_blocker6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feature_content_blocker7.resx">
+      <DependentUpon>feature_content_blocker7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fraud_buster.resx">
+      <DependentUpon>fraud_buster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fraud_buster_getstarted.resx">
+      <DependentUpon>fraud_buster_getstarted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fraud_buster_imessage.resx">
+      <DependentUpon>fraud_buster_imessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="how_webguard.resx">
+      <DependentUpon>how_webguard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="how_wifi.resx">
+      <DependentUpon>how_wifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iPad.resx">
+      <DependentUpon>iPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ldp_map.resx">
+      <DependentUpon>ldp_map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ldp_page.resx">
+      <DependentUpon>ldp_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lost_device_browser.resx">
+      <DependentUpon>lost_device_browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lost_device_protection.resx">
+      <DependentUpon>lost_device_protection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="more_tools.resx">
+      <DependentUpon>more_tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parental_controls.resx">
+      <DependentUpon>parental_controls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password_manager.resx">
+      <DependentUpon>password_manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="purchase.resx">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR.resx">
+      <DependentUpon>QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roaming_data_settings.resx">
+      <DependentUpon>roaming_data_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="safe_surfing.resx">
+      <DependentUpon>safe_surfing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="safe_surfing_activities.resx">
+      <DependentUpon>safe_surfing_activities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scanning.resx">
+      <DependentUpon>scanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scan_result.resx">
+      <DependentUpon>scan_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screenshot_settings.resx">
+      <DependentUpon>screenshot_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="security_report.resx">
+      <DependentUpon>security_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings_filter.resx">
+      <DependentUpon>settings_filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings_renew_activate.resx">
+      <DependentUpon>settings_renew_activate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="share.resx">
+      <DependentUpon>share.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signin_facebook.resx">
+      <DependentUpon>signin_facebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signout.resx">
+      <DependentUpon>signout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signout_scanning.resx">
+      <DependentUpon>signout_scanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signout_scan_result.resx">
+      <DependentUpon>signout_scan_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signout_settings.resx">
+      <DependentUpon>signout_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="social_network.resx">
+      <DependentUpon>social_network.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="social_network_facebook.resx">
+      <DependentUpon>social_network_facebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="social_network_scan_again.resx">
+      <DependentUpon>social_network_scan_again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="social_network_twitter.resx">
+      <DependentUpon>social_network_twitter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test_webguard.resx">
+      <DependentUpon>test_webguard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vpn_settings.resx">
+      <DependentUpon>vpn_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="web_guard.resx">
+      <DependentUpon>web_guard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="web_guard_approved.resx">
+      <DependentUpon>web_guard_approved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="web_guard_blocked.resx">
+      <DependentUpon>web_guard_blocked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="web_guard_browsing.resx">
+      <DependentUpon>web_guard_browsing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wifi_checker.resx">
+      <DependentUpon>wifi_checker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wifi_network_connections.resx">
+      <DependentUpon>wifi_network_connections.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hnet.com-image.ico" />
+    <Content Include="tm.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
